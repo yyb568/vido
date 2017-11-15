@@ -5,7 +5,7 @@
  * add by yyb5683@gmail.com
  * 2017年6月12日16:31:04
  */
-class Home extends MY_Controller {
+class Login extends CI_Controller {
 
 	/**
 	 * 初始化
@@ -19,6 +19,7 @@ class Home extends MY_Controller {
 	
 	public function index(){
         echo 1;die;
+        $this->load->view("login/login",$this->template);
 	}
 	
 }
